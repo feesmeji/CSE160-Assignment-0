@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Asgn0 - Vector Library</title>
+  </head>
+
+  <body onload="main()"> <!--Gonna run main function in js file-->
+        <h1>Fernando Mejia</h1>
+    <p>UCSC Email: feesmeji@ucsc.edu</p>
+    
+    <p>Notes to grader: A lot of the starter code I used was from Lab0 videos linked on the class canvas page. I used various resources to help me write my code. Addidtionally, I recieved help from TA Jihao and Wendy the course tutor to help me debug some parts of my code.
+        The resources I used to help me write and debug some of my code are chatgpt, stackoverflow, youtube, and www.w3resource.com. I commented in my code wherever I used ChatGPT or other websites that I gained inspiration from when writing my code snippets.
+    </p>
+
+    <p> Additional notes: In my github page, asgn0.html is actually named index.html. I did this in order for my page to display properly, but it holds the same exact code as my asgn0.html file in my canvas submission. In my submission on canvas, asgn0.html is present instead of index.html.
+    </p>
+
+    <br><br>
+
+    <canvas id="example" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+
+    <!-- Load Libraries -->
+    <script src="asg0.js"></script>
+    
+    <br><br>
+
+    <label for="x_val">v1: x</label>
+
+    <input type="text" id="x_val" name="x_val" required 
+        minlength="4" maxlength="8" size="10" />
+
+        
+    <label for="y_val">y</label>
+      <input type="text" id="y_val" name="y_val" required 
+          minlength="4" maxlength="8" size="10" />
+
+          <br><br>
+
+    <label for="x_val2">v2: x</label>
+    
+    <input type="text" id="x_val2" name="x_val2" required 
+        minlength="4" maxlength="8" size="10" />
+
+    <label for="y_val2">y</label>
+    
+      <input type="text" id="y_val2" name="y_val2" required 
+          minlength="4" maxlength="8" size="10" />
+
+          <br><br>
+
+      <input type="button" value="Draw" onclick="handleDrawEvent()"></input>
+
+          <br><br>
+
+        <label for="math-ops">Operation:</label>
+
+        <select name="math" id="math-ops">
+          <option value="">--Please choose an option--</option>
+          <option value="add">Add</option>
+          <option value="sub">Subtract</option>
+          <option value="mul">Multiply</option>
+          <option value="div">Divide</option>
+          <option value="magn">Magnitude</option>
+          <option value="norm">Normalize</option>
+          <option value="dot">Angle between</option>
+          <option value="Area">Area</option>
+
+        </select>   
+        
+        <label for="scalar">Scalar:</label>
+
+          <input type="text" id="scalar" name="scalar" required 
+              minlength="4" maxlength="8" size="10" />
+
+          <br><br>
+      <input type="button" value="Draw" onclick="handleDrawOperationEvent()"></input>
+
+
+
+  </body>
+</html>
