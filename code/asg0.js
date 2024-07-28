@@ -4,6 +4,11 @@
 // I used other resources which helped me with the development of this code, and I linked them accordingly on where I used them in my code
 // A lot of the starter code was inspired by the TA Lab 0 videos linked in the course canvas
 
+/*Notes to Grader:
+
+Notes to grader: A lot of the starter code I used was from Lab0 videos linked on the class canvas page. I used various resources to help me write my code. Addidtionally, I recieved help from TA Jihao and Wendy the course tutor to help me debug some parts of my code. The resources I used to help me write and debug some of my code are chatgpt, stackoverflow, youtube, and www.w3resource.com. I commented in my code wherever I used ChatGPT or other websites that I gained inspiration from when writing my code snippets.
+
+Additional notes: In my github page, asgn0.html is actually named index.html. I did this in order for my page to display properly, but it holds the same exact code as my asgn0.html file in my canvas submission. In my submission on canvas, asgn0.html is present instead of index.html.*/
 glb = {}
 let v1 = new Vector3([2.25, 2.25, 0]).elements;  //TA Jihao told me to place this line of code here.
 
